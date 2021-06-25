@@ -1,0 +1,16 @@
+Class sample
+{
+Public static void main(String args[])
+{
+int x=10,y=20;
+System.out.println("before swaping");
+System.out.println("x=" +x);
+System.out.println("y=" +y);
+x=x+y;
+y=y-x;
+x=x-y;
+System.out.primtln("after swaping");
+System.out.println("x=" +x);
+system.out.println("y=" +y);
+}
+}
