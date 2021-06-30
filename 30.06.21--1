@@ -2,9 +2,9 @@ import java.util.*;
 public class Simple{
 public static void main(String args[]){
 Scanner sc=new Scanner(System.in);
-n=sc.nextInt();
-x=sc.nextInt();
-y=sc.nextInt();
+int n=sc.nextInt();
+int x=sc.nextInt();
+int y=sc.nextInt();
 int rem,rev=0;
 while(n>0)
 {
