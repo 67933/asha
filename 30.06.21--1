@@ -1,0 +1,38 @@
+import java.util.*;
+public class Simple{
+public static void main(String args[]){
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+x=sc.nextInt();
+y=sc.nextInt();
+int rem,rev=0;
+while(n>0)
+{
+rem=n%10;
+if(rem==x)
+{
+rem=y;
+}
+else if(rem==y)
+{
+rem=x;
+}
+rev=rev*10+rem;
+n=n/10;
+}
+rem=0;
+int numrev=0;
+while(rev>0)
+{
+rem=rev%10;
+numrev=numrev*10+rem;
+rev=rev/10;
+}
+System.out.println(numrev);
+}
+}
+---------------------------
+16719
+1
+8
+86789
