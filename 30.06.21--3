@@ -1,0 +1,39 @@
+class Solution {
+2
+public:
+3
+    int subtractProductAndSum(int n) {
+4
+     int pdt=1,sum=0,rem,result;
+5
+        while(n>0)
+6
+            {
+7
+            rem=n%10;
+8
+            pdt=pdt*rem;
+9
+            sum=sum+rem;
+10
+            n=n/10;
+11
+            }
+12
+        result=pdt-sum;
+13
+         return result;
+14
+    }
+15
+};
+-------------------
+Your input
+
+234
+Your answer
+
+15
+Expected answer
+
+15
