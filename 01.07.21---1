@@ -1,0 +1,21 @@
+Class triange
+{
+public static void main(string args[])
+{
+int n=5;
+for(int i=n-1;i>=0;i--)
+{
+for(j=0;j<=1;j++)
+{
+System.out.println("*");
+}
+System.out.println();
+}
+}
+}
+--------------------
+*****
+****
+***
+**
+*
