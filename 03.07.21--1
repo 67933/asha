@@ -1,6 +1,9 @@
+import java.util.*;
 class helloworld {
     public static void main(String[] args) {
-        int n=4,i,j,k=1;
+Scanner sc=new Scanner(System.in);
+int n=nextInt();
+        int i,j,k=1;
         for(i=0;i<n;i++)
         {
             for(j=0;j<k;j++)
