@@ -1,0 +1,32 @@
+import java.util.*;
+Class array
+{
+public static void main (string args [])
+{
+Scanner sc=new Scanner(System.in);
+int r=sc.nextInt();
+int c=sc.nextInt();
+int arr[][]=new int[r][c];
+for(int i=0;i<r;i++)
+for(int j=0;j<c;j++)
+arr[i][j]=sc.nextInt();
+
+for(int j=0;j<r;j++)
+{
+int sum=0;
+for(int i=0;i<c;i++)
+{
+sum+=arr[i][j];
+}
+
+System.out.println("column"+(j+1)+"sum:" +sum);
+}
+}
+}
+---------------------------
+2
+2
+2 3
+4 5
+column 1 sum:6
+column 2 sum:8
