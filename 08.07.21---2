@@ -1,0 +1,22 @@
+public class array
+{
+public static void main(string args[])
+{
+int arr[][]=new int[][]{1,2,3},{4,5,6},{7,8,9};
+int l;
+for(int j=0;j<3;j++)
+{
+l=arr[0][j];
+for(int i=1;i<3;i++)
+{
+if(l<arr[i][j])
+l=arr[i][j];
+}
+System.out.println("largest element in"+(j+1)+"column:" +l);
+}
+}
+}
+-------------------------------
+largest element in 1 column:7
+largest element in 2 column:8
+largest element in 3 column:9
