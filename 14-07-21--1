@@ -1,0 +1,37 @@
+import java.util.*;
+class A
+{
+	public static void main(String arg[])	
+	{
+	int i,count;
+        System.out.print("Enter n value : ");
+	Scanner sc=new Scanner(System.in);
+	int n=sc.nextInt();
+        System.out.println("Prime numbers between 1 to "+n+" are ");
+        primeno(n);
+}
+       public static void primeno(int n)
+{
+	for(int j=2;j<=n;j++)
+	{
+	int count=0;
+	for(int i=1;i<=j;i++)
+	{
+	   if(j%i==0)
+	   {
+	        count++;        
+	   }
+	}
+	if(count==2)
+	       System.out.print(j+"  ");     
+	}
+	}
+}
+------------------
+Enter n value:
+10
+Prime no.s between 1 to 10 are
+2 3 5 7
+
+
+
