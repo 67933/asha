@@ -1,0 +1,15 @@
+class Main 
+{
+  public static void main(String[] args) 
+{
+    String word = "asha";
+    String s = word.substring(0, 1);
+    String s2 = word.substring(1, word.length());
+    s = s.toUpperCase();
+    word = s + s2;
+    System.out.println("Name: " + word);
+}
+}
+---------------------------
+asha
+Asha
