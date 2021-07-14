@@ -1,0 +1,27 @@
+import java.util.*;
+class A
+{
+Public static void fact(int n)
+{
+int mul=1;
+for(int i=n;i>=n;i--)
+{
+mul=mul*n;
+display();
+}
+}
+public void display ()
+{
+System.out.println(mul);
+}
+class B
+{
+public static void main (String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+A obj=new A();
+obj.fact(n);
+}
+}
+}
