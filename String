@@ -1,0 +1,20 @@
+import java.lang.*;
+import java.util.*;
+class A
+{
+public static void main(String args[])
+{
+String s=new String("This is a comp");
+String s1[]=s.split("");
+Count(s1[]);
+}
+public static void count(String s1[])
+{
+int a=0;
+for(int i=s1.length-1;i>=0;i--)
+{
+a=a+1;
+}
+System.out.print(a);
+}
+}
