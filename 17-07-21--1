@@ -1,0 +1,31 @@
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+ 
+class Main
+{
+    public static int small(Integer[] arr)
+    {
+     Set<Integer> s = new HashSet<Integer>();
+        Collections.addAll(s, arr);
+        int i = 1;
+        while (true)
+        {
+            if (!s.contains(i)) 
+{
+                return i;
+            }
+            i++;
+        }
+    }
+ 
+    public static void main(String[] args)
+    {
+        Integer[] arr = { 1, 4, 2, -1, 6, 5 };
+ 
+        System.out.println("The smallest missing no. "
+                +small(arr));
+    }
+}
+--------------------------------------------
+The smallest missing no.3
