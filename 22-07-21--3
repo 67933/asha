@@ -1,0 +1,46 @@
+import java.util.*;
+class A
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in)
+String st=sc.next();
+boolean a=balance(st);
+if(a)
+System.out.print("balanced");
+else
+System.out.print("unbalanced")
+}
+public static boolean balance(String st)
+{
+if((st==null) || (st.length()%2!=0))
+return false;
+Stack <Character> s=new Stack<Character>();
+for(int i=0;i<st.length;i++)
+{
+char ch=st.charAt(i);
+if((ch=='{')||(ch=='(')||(ch=='['))
+s.push(ch);
+else
+{
+if((ch=='}')||(ch==')')||(ch==']'))
+{
+if(!Stack.isEmpty())
+{
+char ls=s.pop();
+if(ls=='{'&&ch!='}')
+return false;
+if(ls=='('&&ch!=')')
+return false;
+if(ls=='['&&ch!=']')
+return false;
+}
+}
+else
+{
+return false;
+}
+}
+}
+}
+}
