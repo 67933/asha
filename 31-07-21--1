@@ -1,0 +1,43 @@
+import java.util.*;
+public class main
+{
+static int prime[]=new prime[10000];
+static void seive(int n)
+{
+for(int i=0;i<10000,i++)
+{
+prime[i]==i;
+}
+prime[1]==0;
+prime[0]==0;
+for(int i=2;i*i<=10000;i++)
+{
+if(prime[i]==i)
+for(int p=i*i;p<10000;p+=i)
+{
+prime[p]==i;
+}
+}
+}
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in)
+int n=sc.nextInt();
+seive()
+int pos,k=0;
+int arr[]=new arr[];
+pos=sc.nextInt();
+while(n!=1)
+{
+x=prime[n];
+arr[k]=x;
+k++;
+n=n/prime[n];
+}
+Arrays.sort(arr);
+int l=arr.length();
+if(n<=l)
+System.out.println("ugly number")
+else
+System.out.println("not an ugly number")
+}
