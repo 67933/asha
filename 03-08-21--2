@@ -1,0 +1,24 @@
+import java.util.*;
+public class main
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int arr[]=new int[1000];
+int k=0;
+for(int i=1;i<=1000;i++)
+{
+if(i%2==0)
+arr[k]=i;
+k++;
+}
+int prefix[]=new int[505];
+prefix[0]=arr[0];
+for(int i=1;i<n;i++)
+{
+prefix[i]=prefix[i-1]+arr[i];
+}
+System.out.print(prefix[n-1]);
+}
+}
