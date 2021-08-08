@@ -1,0 +1,29 @@
+import java.util.*;
+class A
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n=sc.nextInt();
+int ans[]=new int[n+1];
+ans[0]=0;
+for(int i=1;i<n+1;i++)
+{
+String str=Integer.toBinarySrting(i);
+int n1=Integer.parseInt(str);
+int rem=0,count=0;
+while(n1>0)
+{
+rem=n1%10;
+if(rem==1)
+count++;
+n1=n1/10;
+}
+ans[i]=count;
+}
+for(int i=0;i<n+1;i++)
+{
+System.out.print(ans[i]);
+}
+}
+}
