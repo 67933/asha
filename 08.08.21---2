@@ -1,0 +1,36 @@
+import java.util.*;
+class main
+{
+public static void main (String args[])
+{
+int a[],n,i,x,mid,flag=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter value for n:");
+n=sc.nextInt();
+a=new Int[n];
+System.out.println("enter no.s in ascending order");
+for(i=0;i<=n;i++)
+a[i]=sc.nextInt();
+int l=0;
+int u=n-1;
+System.out.println("enter search element");
+x=sc.nextInt();
+while(l>=0&&u<=n-1)
+{
+mid=(l+u)/2;
+if(x==a[mid])
+{
+flag++;
+break;
+}
+else if(x<a[mid])
+u=mid-1;
+else
+l=mid+1;
+}
+if(flag==1)
+System.out.println("the element found");
+else
+System.out.println("the element not found");
+}
+}
